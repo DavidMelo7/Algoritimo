@@ -1,0 +1,14 @@
+<meta charset="UTF-8">
+<script>
+    velocidade = Number(window.prompt("qual a velocidade maxima da via"));
+    veiculo = Number(window.prompt("qual a velocidade do veiculo"));
+
+    velocidade_via = velocidade / 2 ;
+
+    if ((veiculo <  velocidade_via) || (veiculo >  velocidade)) {
+        window.alert("vermelho");
+    }
+    else {
+        window.alert("verde");
+    }
+</script>

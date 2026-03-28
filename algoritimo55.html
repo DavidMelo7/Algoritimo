@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<script>
+    salario = Number(window.prompt("qual é o seu salario mensal"));
+
+    if ((salario >= 0) && (salario <= 1000)){
+        inss = salario * 0.03
+    }
+    else if ((salario > 1000) && (salario <= 3000)){
+        inss = salario * 0.04
+    }
+    else if ((salario > 3000) && (salario <= 7000)){
+        inss = salario * 0.05
+    }
+    else {
+        inss = salario * 0.06
+    }
+
+    if ((salario >= 0) && (salario <= 2500)){
+        ir = salario * 0.00
+    }
+    else if ((salario > 2500) && (salario <= 5000)){
+        ir = salario * 0.05
+    }
+    else if ((salario > 5000) && (salario <= 10000)){
+        ir = salario * 0.10
+    }
+    else {
+        ir = salario * 0.15
+    }
+
+    liquido = salario - inss - ir ;
+
+
+    document.write("valor do desconto do inss : R$ " + inss) 
+    document.write("<br>valor do desconto do imposto de renda : R$ " + ir) 
+    document.write("<br>seu salario liquido sera de : R$ " + liquido) 
+
+</script>

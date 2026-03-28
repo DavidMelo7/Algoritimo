@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+    faturamento = Number(window.prompt("qual é o faturamento da sua empresa"));
+
+    if ((faturamento >= 0) && (faturamento <= 100000)){
+        bonus = faturamento * 0.02
+    }
+    else if ((faturamento > 1000000) && (faturamento <= 300000)){
+        bonus = faturamento * 0.03
+    }
+    else if ((faturamento > 3000000) && (faturamento <= 600000)){
+        bonus = faturamento * 0.04
+    }
+    else {
+        bonus = faturamento * 0.05
+    }
+
+
+    document.write("valor do bonus: R$ " + bonus)
+</script>
